@@ -1,0 +1,291 @@
+/***** Start Reset CSS *****/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+
+body {
+  font-family: "Poppins";
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+}
+
+.feature {
+  padding: 70px 0 80px 0;
+  background-color: #FFFDF4;
+  @media (max-width: 991px) {
+    padding: 35px 0 40px 0;
+  }
+  .container {
+    @media (min-width: 1439px) {
+      max-width: 1530px;
+    }
+    .feature__title {
+      font-size: 45px;
+      font-weight: 400;
+      line-height: 53px;
+      color: #374639;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+      @media (max-width: 991px) {
+        font-size: 36px;
+        margin-bottom: 10px;
+        line-height: 40px;
+      }
+      @media (max-width: 767px) {
+        font-size: 32px;
+        line-height: 35px;
+      }
+      @media (max-width: 575px) {
+        font-size: 28px;
+        line-height: 30px;
+      }
+    }
+    .feature__text {
+      font-size: 19px;
+      color: #3F514B;
+      line-height: 27px;
+      max-width: 519px;
+      @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: unset;
+      }
+    }
+    .feature__product {
+      display: flex;
+      gap: 23px;
+      margin-top: 40px;
+      @media (max-width: 1199px) {
+        flex-wrap: wrap;
+      }
+      @media (max-width: 991px) {
+        margin-top: 20px;
+      }
+      .feature__product-card {
+        @media (max-width: 1199px) {
+          width: calc((100% - 23px) / 2);
+        }
+        @media (max-width: 575px) {
+          width: 100%;
+        }
+        .card__img {
+          margin-bottom: 18px;
+          @media (max-width: 991px) {
+            margin-bottom: 10px;
+          }
+          img {
+            @media (max-width: 1199px) {
+              width: 100%;
+            }
+          }
+        }
+        .card__title {
+          margin-bottom: 5px;
+          font-size: 20px;
+          font-weight: 400;
+          color: #414F42;
+          line-height: 25px;
+        }
+        .card__text {
+          font-size: 17px;
+          line-height: 24px;
+          color: #3F514B;
+          max-width: 308px;
+          margin-bottom: 6px;
+          @media (max-width: 767px) {
+            font-size: 15px;
+          }
+          @media (max-width: 575px) {
+            max-width: unset;
+          }
+        }
+        .card__price {
+          display: flex;
+          gap: 6px;
+          align-items: center;
+          .card__price-old {
+            color: #72776C;
+            font-size: 13px;
+            line-height: 18px;
+            text-decoration: line-through;
+          }
+          .card__price-new {
+            font-size: 18px;
+            line-height: 20px;
+            color: #3F514B;
+          }
+        }
+        .card__list {
+          margin-top: 20px;
+          @media (max-width: 991px) {
+            margin-top: 10px;
+          }
+          .card__list-item {
+            padding: 12px 0 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-top: 1px solid #ECEDEC;
+            .item__left {
+              font-size: 15px;
+              color: #72776C;
+              line-height: 18px;
+              text-transform: uppercase;
+              min-width: 52px;
+            }
+            .item__right {
+              color: #4E5C58;
+              font-size: 14px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.testimonial {
+  background-color: #F4F4F4;
+  padding: 65px 0;
+  @media (max-width: 991px) {
+    padding: 30px 0;
+  }
+  .container {
+    @media (min-width: 1440px) {
+      max-width: 1475px;
+    }
+    .testimonial__content {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 50px;
+      display: flex;
+      gap: 20px;
+      @media (max-width: 991px) {
+        padding: 25px;
+      }
+      @media (max-width: 767px) {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 0;
+        padding: 15px;
+      }
+      .testimonial__content-img {
+        width: 50%;
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+        img {
+          border-radius: 12px;
+        }
+      }
+      .testimonial__content-sentence {
+        text-align: center;
+        width: 50%;
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+        .sentence__subtitle {
+          font-size: 14px;
+          line-height: 20px;
+          color: #000;
+          opacity: 0.3;
+          text-transform: uppercase;
+          margin-bottom: 50px;
+          margin-top: 20px;
+          @media (max-width: 1439px) {
+            margin-bottom: 20px;
+            margin-top: 10px;
+          }
+          @media (max-width: 991px) and (min-width: 767px) {
+            margin-bottom: 10px;
+            font-size: 12px;
+            line-height: 18px;
+          }
+          @media (max-width: 767px) {
+            margin-bottom: 10px;
+          }
+          @media (max-width: 575px) {
+            margin-bottom: 5px;
+          }
+        }
+        i {
+          color: #E0E0E0;
+          font-size: 46px;
+          margin-bottom: 10px;
+          @media (max-width: 1439px) {
+            font-size: 36px;
+          }
+          @media (max-width: 991px) {
+            font-size: 30px;
+          }
+          @media (max-width: 575px) {
+            margin-bottom: 5px;
+          }
+        }
+        .sentence__main {
+          color: #0D0D0D;
+          font-size: 30px;
+          line-height: 40px;
+          max-width: 494px;
+          margin: 0 auto;
+          margin-bottom: 20px;
+          letter-spacing: -1px;
+          @media (max-width: 1439px) {
+            font-size: 20px;
+            line-height: 30px;
+          }
+          @media (max-width: 991px) and (min-width: 767px) {
+            margin-bottom: 10px;
+          }
+          @media (max-width: 767px) {
+            margin-bottom: 10px;
+            max-width: unset;
+          }
+          @media (max-width: 575px) {
+            font-size: 16px;
+            margin-bottom: 5px;
+          }
+        }
+        .sentence__author {
+          font-size: 16px;
+          line-height: 20px;
+          color: #0D0D0D;
+          margin-bottom: 5px;
+          @media (max-width: 991px) and (min-width: 767px) {
+            font-size: 14px;
+          }
+        }
+        .sentence__work {
+          color: #000;
+          opacity: 0.3;
+          font-size: 15px;
+          line-height: 22px;
+          @media (max-width: 991px) and (min-width: 767px) {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
